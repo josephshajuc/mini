@@ -1,0 +1,187 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: #F9F7F7;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar-expand{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar-brand{
+    margin: 1.2% 0 1.2% 75px ;
+    font-size: 150%;
+}
+
+.nav-item{
+    padding-right: 50px;
+    font-size: 110%;
+}
+
+.last-item{
+    padding-right: 0;
+    margin-right: 75px;
+}
+
+#my-tickets{
+    margin: 3.5%;
+    border: 3px solid #112D4E;
+    border-radius: 30px;
+    padding:2.5%;
+    
+}
+
+.mt-first-row{
+    margin-bottom: 2%;
+}
+
+.mt-heading{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.create-ticket{
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ct-button{
+    border-radius: 15px;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.ct-button:hover{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.mt-search-row{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 25px;
+    color: #F9F7F7;
+}
+
+.search-box{
+    padding: 2%;
+    padding-bottom: 0;
+    margin-left: 0;
+}
+
+.search-attribute{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    padding-left: 2%;
+}
+
+.search-fields{
+    padding: 2%;
+}
+
+.statusselector{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.textFields{
+    border-radius: 30px;
+}
+
+.search-space{
+    text-align: right;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 2%;
+    padding-right:2.5% ;
+    padding-top: 0;
+}
+
+
+.ticket-card{
+    margin: 2% 0 ;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #F9F7F7;
+    border-radius: 30px;
+    padding: 2.5%;
+    transition: box-shadow 0.3s;
+}
+
+.ticket-card:hover{
+    box-shadow: 0 0 11px #021327;
+}
+
+.ticket-card-no{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ticket-card-status{
+    font-size: 1.2rem;
+}
+
+#tkt-status{
+    font-weight: bold;
+}
+
+.ticket-card-status{
+    text-align: right;
+}
+
+.ticket-card-details{
+    text-align: right;
+}
+
+footer{
+    padding-top: 3%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+.footer-heading{
+    font-size: medium;
+}
+
+.footer-text{
+    padding: 1% 15%;
+    color: #EEEEEE;
+    text-align: justify;
+    line-height: 2;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.footer-button{
+    margin: 0% 5px 1.2% 5px ;
+    width: 13%;
+    font-size: 80%;
+}
+
+.copyright{
+    font-weight: lighter;
+    font-size: small;
+}

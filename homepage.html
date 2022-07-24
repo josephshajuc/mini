@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ticketing System</title>
+        <meta name="description" content="Grievance Redressal platform using Ticketing System">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- Bootstrap Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/6e18b48f72.js" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Josefin+Sans:wght@200;300;400;500;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand navbar-dark">
+            <a href="" class="navbar-brand">TICKETING SYSTEM</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">My Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">My Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li class="nav-item last-item">
+                    <a href="" class="nav-link"> <button class="btn btn-outline-light">Logout</button> </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- My Tickets -->
+        <section id="my-tickets">
+
+            <div class="row mt-first-row">
+                <div class="mt-heading col">
+                    MY TICKETS
+                </div>
+                <div class="create-ticket col-2">
+                    <a href="" class="nav-link"> <button class="btn btn-dark ct-button">Create New Grievance Ticket</button> </a>
+                </div>
+            </div>
+
+            <div class="row mt-search-row">
+                <div class="row search-box">
+                    <div class="col-4 search-attribute">
+                        Ticket Number :
+                        <div class="row search-fields">
+                            <input type="text" name="ticket-number" class="textFields" id="search-ticket-no">
+                        </div>
+                    </div>
+                    <div class="col-4 search-attribute">
+                        Ticket Status :
+                        <div class="row search-fields">
+                            <input type="text" name="ticket-status" class="textFields" id="search-ticket-status">
+                            <!-- <div class="input-group dropdownselector">
+                                <select name="statusselect" id="status-selector" class="custom-select">
+                                    <option selected>Choose status</option>
+                                    <option value="">Submitted</option>
+                                    <option value="">Assigned</option>
+                                    <option value="">Reassigned</option>
+                                    <option value="">Resolved</option>
+                                    <option value="">Closed</option>
+                                    <option value="">Cancelled</option>
+                                </select>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-4 search-attribute">
+                        Subject :
+                        <div class="row search-fields">
+                            <input type="text" name="ticket-subject" class="textFields" id="search-subject">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row search-space">
+                    <a href="" class=""> <button class="btn btn-light btn-sm">Search</button> </a>
+                </div>
+            </div>
+
+            <div class="mt-ticket-list">
+                <!-- It can be empty if there are no tickets created -->
+
+                <!-- Else we display the latest tickets issued first -->
+                <!-- Below is the example of one ticket card display -->
+                <div class=" row ticket-card">
+                    <div class="ticket-card-no col">
+                        <p>Ticket No : <span id="tkt-no">1058</span></p> 
+                    </div>
+                    <div class="ticket-card-status col">
+                        <p>Status : <span id="tkt-status">Assigned</span></p> 
+                    </div>
+                    <div class="ticket-card-date">
+                        <p>Ticket Date : <span id="tkt-date">10/07/2000</span></p> 
+                    </div>
+                    <div class="ticket-card-type">
+                        <p>Ticket Type : <span id="tkt-type">Complaint</span></p> 
+                    </div>
+                    <div class="ticket-card-category col">
+                        <p>Ticket category : <span id="tkt-type">Wrong Data</span></p> 
+                    </div>
+                    <div class="ticket-card-details col">
+                        <a href="" class=""> <button class="btn btn-light btn-sm">View Ticket</button> </a>
+                    </div>
+                </div>
+
+                <div class=" row ticket-card">
+                    <div class="ticket-card-no col">
+                        <p>Ticket No : <span id="tkt-no">4558</span></p> 
+                    </div>
+                    <div class="ticket-card-status col">
+                        <p>Status : <span id="tkt-status">Resolved</span></p> 
+                    </div>
+                    <div class="ticket-card-date">
+                        <p>Ticket Date : <span id="tkt-date">10/07/2000</span></p> 
+                    </div>
+                    <div class="ticket-card-type">
+                        <p>Ticket Type : <span id="tkt-type">Complaint</span></p> 
+                    </div>
+                    <div class="ticket-card-category col">
+                        <p>Ticket category : <span id="tkt-type"></span></p> 
+                    </div>
+                    <div class="ticket-card-details col">
+                        <a href="" class=""> <button class="btn btn-light btn-sm">View Ticket</button> </a>
+                    </div>
+                </div>
+
+                
+            </div>
+      
+        </section>
+
+        <!-- Footer -->
+        <footer class="container-fluid text-center text-white">
+            <div class="row">
+                <div class="footer-items col-6">
+                    <h5 class="footer-heading">
+                        Grievance Redressal Platform
+                    </h5>
+                    <p class="footer-text">
+                        This platform is intended to enable student users to register their complaints and concerns about various departments of their institution through a ticketing system. They would be able to view the status of their tickets and the actions taken. 
+                    </p>
+                </div>
+    
+                <div class="footer-items col">
+                    <div class="footer-links">
+                        <section class="mb-0">
+                            
+                            <div class="row frontend">
+                                <p class="codebase-text col-3">Frontend</p>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">HTML5</div>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">CSS</div>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">Javascript</div>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">Bootstrap5</div>
+                            </div>
+
+                            <div class="row backend">
+                                <p class="codebase-text col-3">Backend</p>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">Django</div>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">MySQL</div>
+                            </div>
+
+                            <!-- <div class="row database">
+                                <p class="codebase-text col-3">Database</p>
+                                <div class="btn btn-outline-light btn-floating col-2 footer-button">MySQL</div>
+                            </div> -->
+
+                            <div class="row codebase">
+                                <p class="codebase-text col-3">Source Code</p>
+                                <a class="btn btn-outline-light btn-floating col-2 footer-button" href="#!" role="button"
+                                ><i class="fab fa-github"></i
+                                ></a>
+                            </div>
+                            
+                          </section>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright pb-1">
+                <div class="text-center p-3">
+                    © 2022 Copyright:
+                    <a class="text-white" href="#">Team 4 Mini Project</a>
+                  </div>
+            </div>
+
+        </footer>
+
+        <script src="homepage.js" async defer></script>
+    </body>
+</html>
